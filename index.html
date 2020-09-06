@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Travel Blog</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Architects+Daughter">
+    </head>
+
+    <body>
+        <header>
+            <nav>
+              <h1> Travel Blog</h1> 
+            </nav>
+        </header>
+        <main>
+            <section class="signup">
+                <h1>Sign up for my newsletter</h1>
+                <p>Get the latest news about traveling and photography. Be the first to know where I've been traveling to.</p>
+            </section>  
+
+            <section>
+                <form>
+                    <fieldset action="index.html" method="post">
+                        <legend>Contact Information</legend>
+                        <p>Some important info about you</p>
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="user_name"> </input><br>
+
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="user_email"> </input><br>
+
+                        <label for="tel">Phone Number</label>
+                        <input type="tel" id="tel" name="user_tel"> </input><br>
+
+                        <label for="address">Street Address</label>
+                        <input type="text" id="address" name="user_address"> </input><br>
+
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="user_city"> </input><br>
+
+                        <label for="region">Region</label>
+                        <input type="text" id="region" name="user_region"> </input><br>
+
+                        <label for="postcode">Postcode</label>
+                        <input type="text" id="postcode" name="user_postcode"> </input><br>
+                    </fieldset>
+            
+                    <fieldset action="index.html" method="post">
+                        <legend>Newslettter</legend>
+                        <p>Select the type of content you would like to reciece</p>
+
+                            <input type="checkbox" id="newzealand" value="interest_nz" name="user_newzealand" ><label for="newzealand">New Zealand</label><br>
+                            <input type="checkbox" id="australasia" value="interest_au" name="user_australasia" ><label for="australasia">Australasia</label><br>
+                            <input type="checkbox" id="south_america" value="interest_sa" name="user_south_america" ><label for="south_america">South America</label><br>
+                            <input type="checkbox" id="north_america" value="interest_na" name="user_north_america" ><label for="north_america">North America</label><br>
+                            <input type="checkbox" id="europe" value="interest_eu" name="user_europe" ><label for="europe">Europe</label><br>
+
+                    </fieldset>
+
+                    <fieldset action="index.html" method="post">
+                        <legend>Also...</legend>
+                        <p>How often would you like to recieve this Newsletter?</p>
+
+                        <input type="radio" id="daily" value="daily" name="user_choice"><label for="daily">Daily</label><br>
+                        <input type="radio" id="weekly" value="weekly" name="user_choice"><label for="weekly">Weekly</label><br>
+                        <input type="radio" id="monthly" value="monthly" name="user_choice"><label for="monthly">Monthly</label><br>
+                        <br>
+                        <label for="other_interests">What else would you like to read?</label><br>
+                        <textarea id="other_interests" name="user_other"></textarea>
+                    </fieldset>
+
+                    <button type="submit">Sign Up</button>
+
+                </form>
+        </section>
+        </main>
+
+        <footer>
+            <p>Dan Costa &copy; | 2020</p>
+        </footer>
+    </body>
+</html>
