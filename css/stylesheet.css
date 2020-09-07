@@ -180,7 +180,9 @@ textarea::placeholder {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-
 }
+.flex label {
+    width: 30%; 
+  }
 
 }
