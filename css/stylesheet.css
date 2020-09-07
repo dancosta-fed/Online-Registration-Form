@@ -170,6 +170,16 @@ textarea::placeholder {
     color: #e8e9e9;
   } 
 
+  input:required:invalid, input:focus:invalid {
+    background-image: url("images/alert.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
+  input:required:valid {
+    background-image: url("images/approved.png");
+    background-position: right top;
+    background-repeat: no-repeat;
+  }
 
 /* Media Queries */
 
@@ -183,6 +193,12 @@ textarea::placeholder {
 }
 .flex label {
     width: 30%; 
+  }
+
+  .signup-text {
+    width: 45%;
+    text-align: center;
+    margin: auto;
   }
 
 }
