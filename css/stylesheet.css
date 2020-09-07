@@ -145,33 +145,36 @@ button:hover {
     background-color: #324657;
 }
 
-input:focus,
-textarea:focus {
-    background-color: #7e858a;
-    color: #F2F2F2;
-    border-color: 2px solid #f9b233; 
-}
-
 button[type="submit"] {
     cursor: pointer;
 }
 
+button:focus {
+    outline: 2px solid #394f61;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #7e858a;
+    color: #F2F2F2;
+    outline: 2px solid #f9b233; 
+
+}
+
+input::placeholder {
+    color: #e8e9e9;
+    text-align: right;
+  }
+
+textarea::placeholder {
+    color: #e8e9e9;
+  } 
+
+
 /* Media Queries */
 
 @media screen and (min-width: 768px) {
- 
-input[type="text"],
-input[type="password"],
-input[type="date"],
-input[type="datetime"],
-input[type="email"],
-input[type="number"],
-input[type="search"],
-input[type="tel"],
-input[type="time"],
-input[type="url"], {
-    display: flex;
-    flex: 1;
-}
+
+
 
 }
