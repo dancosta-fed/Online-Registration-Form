@@ -19,7 +19,7 @@
             <section class="signup">
                 <h1>Sign up for my Newsletter</h1>
                 <img src="images/danprofile.png" class="logo" alt="blog logo"> 
-                <p>Get the latest news about traveling and photography. Be the first to know where I've been traveling to.</p>
+                <p class="signup-text">Get the latest news about traveling and photography. Be the first to know where I've been traveling to.</p>
             </section>  
 
             <section>
@@ -40,12 +40,13 @@
                         <input type="text" id="address" name="user_address"> </input><br>
 
                         <label for="city">City</label>
-                        <input type="text" id="city" name="user_city" placeholder="What city are you?"> </input><br>
+                        <input type="text" id="city" name="user_city" placeholder="Where are you?"> </input><br>
 
                         <label for="region">Region</label>
                         <select id="region" name="user_region"> 
 
                             <Optgroup label="North Island">
+                                <option value="blank">Choose Region</option>
                                 <option value="Northland">Northland</option>
                                 <option value="Auckland">Auckland</option>
                                 <option value="Waikato">Waikato</option>
@@ -76,7 +77,7 @@
                         <legend class="legend">Newslettter</legend>
                         <p>Select the type of content you would like to receive</p>
 
-                            <input type="checkbox" id="newzealand" value="interest_nz" name="user_newzealand" ><label for="newzealand">New Zealand</label><br>
+                            <input type="checkbox" id="newzealand" value="interest_nz" name="user_newzealand"><label for="newzealand">New Zealand</label><br>
                             <input type="checkbox" id="australasia" value="interest_au" name="user_australasia" ><label for="australasia">Australasia</label><br>
                             <input type="checkbox" id="south_america" value="interest_sa" name="user_south_america" ><label for="south_america">South America</label><br>
                             <input type="checkbox" id="north_america" value="interest_na" name="user_north_america" ><label for="north_america">North America</label><br>
