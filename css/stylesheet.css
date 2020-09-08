@@ -78,6 +78,10 @@ main {
     width: 100%;
 }
 
+.also {
+    text-align: center;
+}
+
 form {
     max-width: 767px;
     margin: 10px auto;
