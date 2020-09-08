@@ -10,7 +10,7 @@
 body {
 	font-family: Grandstander, Roboto, sans-serif;
     line-height: 1.5;
-    background-color: #F2F2F2;
+    background-color: #e7e6e5;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -100,7 +100,6 @@ input[type="search"],
 input[type="tel"],
 input[type="time"],
 input[type="url"],
-textarea,
 select {
   background: #374d56;
   border: none;
@@ -114,6 +113,26 @@ select {
   color: #394f61;
   box-shadow: 0 0 1px #324657 inset;
   margin-bottom: 30px;
+}
+
+textarea {
+    background: #374d56;
+    border: none;
+    font-size: 16px;
+    height: auto;
+    margin: 0;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    color: #F2F2F2;
+    box-shadow: 0 0 1px #F2F2F2 inset;
+    margin-bottom: 30px;
+}
+
+textarea:focus {
+    outline: 2px solid #F2F2F2;
+    background-color: #7e858a;
+    transition: background-color 1s, color 1s;
 }
 
 input[type="radio"],
@@ -153,12 +172,12 @@ button:focus {
     outline: 2px solid #394f61;
 }
 
-input:focus,
-textarea:focus {
+input:focus {
     background-color: #7e858a;
     color: #F2F2F2;
-    outline: 2px solid #f9b233; 
-
+    outline: 2px solid #f9b233;
+    background-color: #394f61;
+    transition: background-color 1s, color 1s; 
 }
 
 input::placeholder {
@@ -172,6 +191,11 @@ textarea::placeholder {
 
 label {
     cursor: pointer;
+}
+
+.background-change {
+    background-color: #fccc76;
+    color: #394f61;
 }
 
 /* ------ Checkbox and Radio Buttons ------ */
@@ -221,7 +245,7 @@ options, but I figured it looked better like it is now. */
  .radio-wrapper {
     display: block;
     position: relative;
-    padding-left: 25px;
+    padding-left: 35px;
     cursor: pointer;
 }
 
@@ -237,7 +261,7 @@ options, but I figured it looked better like it is now. */
     position: absolute;
     display: block;
     top: 3px;
-    left: 0;
+    left: 10px;
     height: 15px;
     width: 15px;
     background-color: #7e858a;
@@ -245,7 +269,7 @@ options, but I figured it looked better like it is now. */
   } 
 
 .radio-wrapper input:checked ~ .radiomark {
-    background-color: #f9b233;
+    background-color: #F2F2F2;
 }
 
  .radiomark::after {
@@ -255,10 +279,14 @@ options, but I figured it looked better like it is now. */
      height: 5px;
  } 
 
-  .checkbox-wrapper:hover,
-  .radio-wrapper:hover {
+  .checkbox-wrapper:hover {
     color: #f9b233;
   }
+
+.radio-wrapper:hover {
+      color: #F2F2F2;
+  } 
+
 
 /* ------ Media Queries ------ */
 
