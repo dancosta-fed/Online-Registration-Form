@@ -24,30 +24,30 @@
                     </section>  
 
                     <section>
-                        <form>
-                            <fieldset action="index.html" method="post" class="info">
+                        <form action="index.html" method="post">
+                            <fieldset class="info">
                                 <legend class="legend">Contact Information</legend>
                                 <p>Some important info about you</p>
                                     
                                     <div class="flex">
                                         <label for="name">Full Name</label>
-                                        <input type="text" id="name" name="user_name" placeholder="Required" required> </input><br>
+                                        <input type="text" id="name" name="user_name" placeholder="Required" required><br>
                                     </div>
                                     <div class="flex">
                                         <label for="email">Email Address</label>
-                                        <input type="email" id="email" name="user_email" placeholder="Required" required> </input><br>
+                                        <input type="email" id="email" name="user_email" placeholder="Required"><br>
                                     </div>
                                     <div class="flex">
                                         <label for="tel">Phone Number</label>
-                                        <input type="tel" id="tel" name="user_tel" placeholder="Optional"> </input><br>
+                                        <input type="tel" id="tel" name="user_tel" placeholder="Optional"><br>
                                     </div>
                                     <div class="flex">
                                         <label for="address">Street Address</label>
-                                        <input type="text" id="address" name="user_address" placeholder="Street"> </input><br>
+                                        <input type="text" id="address" name="user_address" placeholder="Street"><br>
                                     </div>
                                     <div class="flex">
                                         <label for="city">City</label>
-                                        <input type="text" id="city" name="user_city" placeholder="Where in the world are you?"> </input><br>
+                                        <input type="text" id="city" name="user_city" placeholder="Where in the world are you?"><br>
                                     </div>
 
                                     <div class="flex">
@@ -80,30 +80,70 @@
 
                                     <div class="flex">
                                         <label for="postcode">Postcode</label>
-                                        <input type="text" id="postcode" name="user_postcode" placeholder="postcode"> </input><br>
+                                        <input type="text" id="postcode" name="user_postcode" placeholder="postcode"><br>
                                     </div>  
                             </fieldset>
                     
-                            <fieldset action="index.html" method="post" class="newsletter">
+                            <fieldset>
                                 <legend class="legend">Newslettter</legend>
                                 <p>Select the type of content you would like to receive</p>
 
-                                    <input type="checkbox" id="newzealand" value="interest_nz" name="user_newzealand"><label for="newzealand">New Zealand</label><br>
-                                    <input type="checkbox" id="australasia" value="interest_au" name="user_australasia" ><label for="australasia">Australasia</label><br>
-                                    <input type="checkbox" id="south_america" value="interest_sa" name="user_south_america" ><label for="south_america">South America</label><br>
-                                    <input type="checkbox" id="north_america" value="interest_na" name="user_north_america" ><label for="north_america">North America</label><br>
-                                    <input type="checkbox" id="europe" value="interest_eu" name="user_europe" ><label for="europe">Europe</label><br>
+                                <label for="newzealand" class="checkbox-wrapper">  
+                                    <input type="checkbox" id="newzealand" value="interest_nz" name="user_newzealand">
+                                        New Zealand 
+                                    <span class="checkmark"></span>
+                                </label><br>
+
+                                <label for="australasia" class="checkbox-wrapper">  
+                                    <input type="checkbox" id="australasia" value="interest_au" name="user_australasia">
+                                        Australasia 
+                                    <span class="checkmark"></span>
+                                </label><br>
+
+                                <label for="south_america" class="checkbox-wrapper">  
+                                    <input type="checkbox" id="south_america" value="interest_sa" name="user_south_america">
+                                        South America 
+                                    <span class="checkmark"></span>
+                                </label><br>
+
+                                <label for="north_america" class="checkbox-wrapper">  
+                                    <input type="checkbox" id="north_america" value="interest_na" name="user_north_america">
+                                        North America 
+                                    <span class="checkmark"></span>
+                                </label><br>
+
+                                <label for="europe" class="checkbox-wrapper">  
+                                    <input type="checkbox" id="europe" value="interest_eu" name="user_europe">
+                                        Europe
+                                    <span class="checkmark"></span>
+                                </label><br>
 
                             </fieldset>
 
-                            <fieldset action="index.html" method="post">
+                            <fieldset>
                                 <legend class="legend">Also...</legend>
                                 <p>How often would you like to receive this Newsletter?</p>
 
-                                <input type="radio" id="daily" value="daily" name="user_choice"><label for="daily">Daily</label><br>
-                                <input type="radio" id="weekly" value="weekly" name="user_choice"><label for="weekly">Weekly</label><br>
-                                <input type="radio" id="monthly" value="monthly" name="user_choice"><label for="monthly">Monthly</label><br>
+                                <label for=daily class="radio-wrapper">
+                                    <input type="radio" id="daily" value="daily" name="user_choice"> 
+                                    Daily
+                                    <span class="radiomark"></span>
+                                </label><br>
+
+                                <label for=weekly class="radio-wrapper">
+                                    <input type="radio" id="weekly" value="weekly" name="user_choice">
+                                    Weekly
+                                    <span class="radiomark"></span>
+                                </label><br>
+
+                                <label for=monthly class="radio-wrapper">
+                                    <input type="radio" id="monthly" value="monthly" name="user_choice">
+                                    Monthly
+                                    <span class="radiomark"></span>
+                                </label><br>
+                                
                                 <br>
+
                                 <label for="other_interests" class="content">What else would you like to read?</label><br>
                                 <textarea id="other_interests" name="user_other" placeholder="Let me know what you're interested in!"></textarea>
                             </fieldset>
