@@ -255,15 +255,6 @@ options, but I figured it looked better like it is now. */
      height: 5px;
  } 
 
- .radio-wrapper .radiomark:after {
-    top: 3.479px;
-    left: 3.479px;
-    width: 8.5px;
-    height: 8.5px;
-    border-radius: 50%;
-    background: #7e858a;
-  }
-
   .checkbox-wrapper:hover,
   .radio-wrapper:hover {
     color: #f9b233;
