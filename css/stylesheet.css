@@ -199,13 +199,6 @@ label {
     
 }
 
-.linebreak {
-    display: block;
-    border-bottom: 3px double #2E3843;
-    margin-bottom: 3px;
-    margin-top: 20px;
-}
-
 /* ------ Checkbox and Radio Buttons ------ */
 
 /* In order to make those I've seen videos on youtube, read some articles online and even compared fellow students projects. I wasn't aiming for this result,
